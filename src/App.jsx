@@ -16,7 +16,7 @@ function App() {
   };
 
   function deleteTask(deleteTaskName) {
-    setToDolist(ToDolist.filter(task => task.taskName !== deleteTaskName));
+    setToDolist(ToDolist.filter((task) => task.taskName !== deleteTaskName));
   }
 
   function toogleCheck(taskName) {
@@ -28,8 +28,9 @@ function App() {
   }
   return (
     <>
+      {/* <h1 className='text text-teal-900 text-6xl'>haha</h1> */}
       <div className='container'>
-        <h1 className='text-white'> To Do List</h1>
+        <h1 className='text '> To Do List</h1>
         <Taskinput addTask={addTask} />
         <div className='toDolist'>
           <ul className='list-items'>

@@ -20,7 +20,7 @@ export default function Taskinput({ addTask }) {
     return (
         <div>
             <form className='inputField' onSubmit={handleAddTask}>
-                <input type="text" value={task} placeholder='add Item'
+                <input type="text" value={task} placeholder='Input List'
                     onChange={handleInputValue} />
                 <button>+</button>
             </form>
